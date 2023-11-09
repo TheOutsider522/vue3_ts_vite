@@ -1,6 +1,7 @@
 <template>
   <div class="box">
     <h1>App.vue</h1>
+    <h1>新增标题</h1>
   </div>
 </template>
 

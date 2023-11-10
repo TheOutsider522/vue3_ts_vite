@@ -6,21 +6,20 @@
   </div>
 </template>
 
-<script setup lang='ts'>
+<script setup lang="ts">
 import { defineProps } from 'vue'
 defineProps({
   // xlink:href前缀
   prefix: {
     type: String,
-    default: '#icon-'
+    default: '#icon-',
   },
   // 提供使图标的名字
   name: {
     type: String,
-    default:""
-  }
+    default: '',
+  },
 })
 </script>
 
-<style scoped lang='scss'>
-</style>
+<style scoped lang="scss"></style>

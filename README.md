@@ -238,38 +238,4 @@ pnpm add sass sass-loader stylelint postcss postcss-scss postcss-html stylelint-
 
 2. `.stylelintrc.cjs`配置文件
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 [【从零到一手撕脚手架 | 第三节】项目集成CommitLInt+ESLint+Prettier+StyleLint+LintStaged-阿里云开发者社区 (aliyun.com)](https://developer.aliyun.com/article/1180656)

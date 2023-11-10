@@ -1,19 +1,18 @@
 <template>
-  <div class="box">
-    <h1>App.vue</h1>
-    <h1>新增标题</h1>
+  <div>
+    <h1>App根组件</h1>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang='ts'>
+import { onMounted } from 'vue'
+import { reqLogin } from '@/api/user'
 
-<style scoped lang="scss">
-.box {
-  width: 600px;
-  height: 400px;
-  background: black;
-  h1 {
-    color: white;
-  }
-}
+onMounted(() => {
+  reqLogin({ username: 'admin', password: 'admin' })
+})
+</script>
+
+<style scoped lang='scss'>
+
 </style>

@@ -8,10 +8,12 @@ enum API {
   USERINFO_URL = '/user/info',
 }
 
+// 登录接口方法
 export const reqLogin = (data: LoginForm) => {
   request.post<any, LoginResponse>(API.LOGIN_URL, data)
 }
 
-export const reqUserIngo = () => {
+// 获取用户信息接口方法
+export const reqUserInfo = () => {
   request.get<any, UserResponseData>(API.USERINFO_URL)
 }

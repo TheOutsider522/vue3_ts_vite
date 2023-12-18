@@ -4,10 +4,14 @@ import App from '@/App.vue'
 import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
+// 引入模板全局样式
+import '@/styles/index.scss'
 // svg插件需要的配置代码
 import 'virtual:svg-icons-register'
 // 引入自定义插件对象: 注册整个项目的全局组件
 import GlobalComponent from '@/components/index'
+// 引入路由
+import router from '@/router'
 
 const app = createApp(App)
 
@@ -19,8 +23,7 @@ app.use(ElementPlus, {
 
 // 安装自定义插件: 注册所有全局组件
 app.use(GlobalComponent)
-
-// 引入模板全局样式
-import '@/styles/index.scss'
+// 注册路由
+app.use(router)
 
 app.mount('#app')
